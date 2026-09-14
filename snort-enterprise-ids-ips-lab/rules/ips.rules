@@ -1,5 +1,0 @@
-drop tcp any any -> $HOME_NET 22 (msg:"IPS BLOCK SSH TEST TRAFFIC"; flags:S; sid:2000001; rev:1;)
-drop tcp any any -> $HOME_NET 23 (msg:"IPS BLOCK TELNET TEST TRAFFIC"; flags:S; sid:2000002; rev:1;)
-drop tcp any any -> $HOME_NET 3389 (msg:"IPS BLOCK RDP TEST TRAFFIC"; flags:S; sid:2000003; rev:1;)
-drop tcp any any -> $HOME_NET 8080 (msg:"IPS BLOCK TEST SERVICE"; flags:S; sid:2000004; rev:1;)
-drop icmp any any -> $HOME_NET any (msg:"IPS BLOCK ICMP TEST TRAFFIC"; itype:8; sid:2000005; rev:1;)
